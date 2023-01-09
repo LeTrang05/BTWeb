@@ -1,0 +1,135 @@
+.container {
+    margin-top: 50px;
+}
+.container__content {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #40719c;
+    padding: 40px 60px;
+    border-radius: 3px;
+}
+.heading {
+    margin-bottom: 20px;
+}
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+.form__item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.form__birthday {
+    width: 100%;
+}
+.form__notice {
+    color: red;
+}
+.form__label {
+    min-width: 110px;
+    text-align: center;
+    color: #fff;
+    background-color: #71ad48;
+    padding: 6px 10px;
+    border: 1.5px solid #40719c;
+    display: inline-block;
+    border-radius: 2px;
+}
+.form__label span {
+    color: red;
+}
+.form__faculty {
+}
+.form__input {
+    width: 100%;
+    border: 1.5px solid #40719c;
+    outline: none;
+    border-radius: 2px;
+    padding: 6px;
+}
+.form__value {
+    flex: 1;
+    margin-left: 20px;
+}
+.fomr__image {
+    /* max-width: 300px; */
+}
+.image {
+    width: 50%;
+}
+.form__link {
+    text-decoration: none;
+}
+.form__file {
+    border: none;
+}
+.form__gender {
+    position: relative;
+    user-select: none;
+    padding-left: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.input__gender {
+    position: absolute;
+    opacity: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #71ad48;
+    border-radius: 50%;
+    border: 1.5px solid #40719c;
+}
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #71ad48;
+}
+.input__gender:checked ~ .checkmark {
+    background-color: #fff;
+}
+.input__gender:checked ~ .checkmark::after {
+    display: block;
+}
+.faculty {
+    width: 100%;
+    position: relative;
+}
+.form__faculty {
+    appearance: none;
+    cursor: pointer;
+}
+.focus {
+    position: absolute;
+    display: block;
+    top: 75%;
+    transform: translateY(-75%);
+    right: 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #71ad48 transparent transparent;
+}
+.form__submit {
+    padding: 10px 40px;
+    border-radius: 6px;
+    background-color: #71ad48;
+    color: #fff;
+    border: 1.5px solid #40719c;
+    margin: 40px auto 0;
+    display: block;
+    cursor: pointer;
+}
